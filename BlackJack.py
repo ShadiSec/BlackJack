@@ -148,9 +148,12 @@ elif play_game == "y":
                     print("You Win!")
                     play = False
                 elif comp_total_value == player_total_value: # Checks if the comp value is lower than 21 and greater than player's.
+                    print("-" * 64)
                     print("It's a Draw!")
                     play = False
                 else:
+                    print("-" * 64)
+                    print("You Lose!")
                     play = False
             else:
                 print("Invalid Input")
