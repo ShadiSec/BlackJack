@@ -143,11 +143,11 @@ elif play_game == "y":
                 # Gets the new comp_total_value after ace adjustment.
                 comp_total_value = adjust_ace(face_list=comp_face_list, value_list=comp_value)
 
-                if comp_total_value < player_total_value or comp_total_value > 21: # If the computer draws cards whose values equate to more than 21. Player wins.
+                if comp_total_value < player_total_value or comp_total_value > 21: # If the computer value is less than the player value OR the computer value is greater than 21. Player wins.
                     print("-" * 64)
                     print("You Win!")
                     play = False
-                elif comp_total_value == player_total_value: # Checks if the comp value is lower than 21 and greater than player's.
+                elif comp_total_value == player_total_value: # If player value is equal to computer value. It's a draw.
                     print("-" * 64)
                     print("It's a Draw!")
                     play = False
